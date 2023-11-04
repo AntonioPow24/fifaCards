@@ -1,0 +1,91 @@
+
+
+
+
+.card {
+    background-color: aqua;
+    border-radius: 30px;
+    
+    width: 286px;
+    height: 400px;
+    font-weight: bolder;
+    background-image: url(/public/images/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s all;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card .presentationCard{
+    height: 65%;
+    display: flex;
+    padding: 10px 0 0 0;
+}
+
+
+.presentationCard .data-presentation{
+    width: 34.6%;
+    display: flex;
+    flex-direction: column;
+    padding:10px 0 0 20px;
+    gap: 1.5rem;
+    align-items: center;
+    
+}
+.data-presentation .age{
+    font-size: 3.4rem;
+}
+.data-presentation .pos{
+    font-size: 1.9rem;
+}
+.presentationCard .img-presentation{
+    width: 65.4%;
+    padding: 30px 0 0 0;
+    
+}
+
+img{
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    height: 70%;
+}
+
+.img-presentation img{
+   object-fit: cover;
+   height: 100%;
+   
+}
+
+.card .dateCard{
+    height: 35%;
+
+}   
+.dateCard p{
+font-size: 1.8rem;
+height: 50%;
+background: #928334;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.dateCard p:first-child{
+background: transparent;
+
+}
+.dateCard p:nth-child(2){
+border-bottom-left-radius: 30px;
+border-bottom-right-radius: 30px;
+color: #000;
+}
+
+
+
+

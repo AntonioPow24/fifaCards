@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito:ital,wght@0,300;1,200;1,300&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background-color: #373939;
+}
+
+.container{
+
+padding: 20px;
+display: grid;
+grid-template-columns: repeat(auto-fill,minmax(286px,1fr));
+grid-gap: 30px;
+justify-items: center;
+}
