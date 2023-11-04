@@ -5,7 +5,7 @@ import '../Style/card.css'
 export default function Card({name,age,pos,img,team,logoteam}) {
   return (
     <div className="card">
-        <img src={img} alt="" />
+        
         <div className="presentationCard">
             <div className="data-presentation">
                 <span className="age" >{age}</span>
@@ -24,6 +24,7 @@ export default function Card({name,age,pos,img,team,logoteam}) {
             <p>{name}</p>
             <p>{team}</p>
         </div>
+        <img className='imgplayer' src={img} alt="" />
     </div>
   )
 }

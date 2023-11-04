@@ -1,0 +1,84 @@
+
+
+
+.formContainer{
+    background-color: #a1904f;
+    width: 437px;
+    text-align: center;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+
+.formContainer h2{
+    color: #000;
+    font-size: 2.8rem;
+    margin-bottom: 1.3rem;
+}
+
+.formContainer .form{
+    padding: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form .inputContainer{
+    display: flex;
+    flex-direction: column;
+}
+.inputContainer .label{
+   font-size: 1.5rem;
+   color: #000;
+   font-weight: bold;
+   margin-bottom: 8px;
+}
+.inputContainer .input,.select , .select> *{
+   font-weight: bold;
+    font-size: 1.4rem;
+   background-color: #faf5e2;
+   border-radius: 10px;
+   border: none;
+   padding: 2px 10px;
+}
+
+.formContainer .submit{
+    font-size: 1.2rem;
+    margin: 10px 4.5rem 0;
+    padding: 10px 0;
+    border-radius: 20px;
+    border:none;
+    color: #fff;
+    background-color: #302104;
+}
+
+.submit:hover{
+    background-color: #6d6338;
+}
+
+
+.formContainer span{
+    color: #a10505;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width:900px) {
+    .formContainer{
+        width: 100%;
+        
+    }
+    .formContainer .inputContainer{
+        padding: 0 15%;
+    }
+
+    .formContainer h2{
+        font-size: 2rem;
+    }
+    .inputContainer .label{
+        font-size: 1.3rem;
+    }
+
+    .inputContainer .input , .select, .select > *{
+        font-size: 1rem;
+    }
+}
