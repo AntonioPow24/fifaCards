@@ -211,7 +211,7 @@ export default function Form() {
 
         <button className="submit">Crear Cartilla</button>
 
-        <pre>{JSON.stringify(watch(), null, 2)}</pre>
+       
       </form>
     </div>
         
