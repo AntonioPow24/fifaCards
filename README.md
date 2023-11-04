@@ -1,8 +1,7 @@
-# React + Vite
+# Fifa Cards Soccer Players
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a page where you can see cards about famouse players like age, photo, position, and more
 
-Currently, two official plugins are available:
+![image](https://github.com/AntonioPow24/fifaCards/assets/69053361/a9df064d-0741-49b7-a1ac-948c57886f03)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
