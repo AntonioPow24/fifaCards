@@ -5,7 +5,7 @@
 .card {
     background-color: aqua;
     border-radius: 30px;
-    
+    position: relative;
     width: 286px;
     height: 400px;
     font-weight: bolder;
@@ -13,14 +13,40 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: #000;
-    overflow: hidden;
+    
     position: relative;
-    transition: 0.5s all;
+    
+    
 }
+
+.card::before , .card::after{
+    content: '';
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    background: linear-gradient(45deg ,#ca4a05,#790441,#54067b);
+    background-size: 400%;
+    width: calc(100% + 7px);
+    height: calc(100% + 7px);
+    border-radius: 32px;
+    z-index: -1;
+    
+    
+    animation: ani 20s linear infinite;
+}
+
+
+
 
 .card:hover{
     transform: scale(1.1);
+    color: #fff;
 }
+.card:hover .dateCard p:nth-child(2){
+  background-color: #b69740;
+}
+
+
 
 .card .presentationCard{
     height: 65%;
@@ -33,35 +59,35 @@
     width: 34.6%;
     display: flex;
     flex-direction: column;
-    padding:10px 0 0 20px;
-    gap: 1.5rem;
+    padding:10px 0 0 0;
+    justify-content: space-between;
     align-items: center;
+    height: 240px;
     
 }
 .data-presentation .age{
-    font-size: 3.4rem;
+    font-size: 3.2rem;
 }
 .data-presentation .pos{
-    font-size: 1.9rem;
+    font-size: 1.7rem;
 }
-.presentationCard .img-presentation{
-    width: 65.4%;
-    padding: 30px 0 0 0;
+.data-presentation .teamContainer{
+    padding: 15px;
+}
+.teamContainer .team{
+    object-fit: cover;
     
+    width: 100%;
 }
 
-img{
+
+.card >img{
     position: absolute;
     top: 20px;
     left: 60px;
     height: 70%;
 }
 
-.img-presentation img{
-   object-fit: cover;
-   height: 100%;
-   
-}
 
 .card .dateCard{
     height: 35%;
@@ -74,7 +100,6 @@ background: #928334;
 display: flex;
 justify-content: center;
 align-items: center;
-
 }
 .dateCard p:first-child{
 background: transparent;

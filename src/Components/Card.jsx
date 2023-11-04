@@ -2,7 +2,7 @@
 import '../Style/card.css'
 
 
-export default function Card({name,age,pos,img,team}) {
+export default function Card({name,age,pos,img,team,logoteam}) {
   return (
     <div className="card">
         <img src={img} alt="" />
@@ -10,6 +10,10 @@ export default function Card({name,age,pos,img,team}) {
             <div className="data-presentation">
                 <span className="age" >{age}</span>
                 <span className="pos" >{pos}</span>
+                <div className="teamContainer">
+                <img className="team" src={logoteam} alt="" />
+                </div>
+                
             </div>
             
             {/* <div className="img-presentation">

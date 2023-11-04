@@ -27,6 +27,7 @@ export default function ContainerCards() {
           team={player.team}
           img={player.urlImage}
           pos={player.position}
+          logoteam={player.logoTeam}
           />
         ))}
 
